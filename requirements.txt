@@ -1,0 +1,10 @@
+# Runtime dependencies (single source of truth; pyproject.toml reads this file)
+langchain-core>=0.3
+langchain-google-genai>=2.0
+langchain-openai>=0.2
+langchain-anthropic>=0.3
+pydantic>=2.7
+pydantic-settings>=2.4
+streamlit>=1.40
+ruff>=0.5
+python-dotenv>=1.0

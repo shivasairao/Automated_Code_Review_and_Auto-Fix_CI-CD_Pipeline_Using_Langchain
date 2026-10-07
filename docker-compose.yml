@@ -1,0 +1,14 @@
+services:
+  app:
+    build: .
+    image: ai-code-review:latest
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    restart: unless-stopped
+    read_only: true
+    tmpfs:
+      - /tmp
+    security_opt:
+      - no-new-privileges:true
